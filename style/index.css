@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400;700&family=Kalam:wght@300&family=Licorice&family=Mukta:wght@200&family=Square+Peg&family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Licorice&family=Mukta:wght@200&family=Syncopate:wght@400;700&display=swap');
 
 /* setting up the basic boilerplate */
 *{
 	margin:0px;
 }
+
 :root{
 	--dominant-color: rgb(5, 0, 29);
 	--impact-color: #00caf9;
@@ -49,7 +50,7 @@ header{
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	gap: clamp(0.00rem, calc(-0.91rem + 4.57vw), 2.34rem);
+	gap: clamp(1rem, calc(-0.91rem + 4.57vw), 2.34rem);
 }
 
 /* making main content to come side by side */
@@ -140,7 +141,7 @@ hr{
 }
 #links>svg{
 	aspect-ratio: 1/1;
-	width: 40px;
+	width: clamp(1.80rem, calc(1.12rem + 3.62vw), 2.93rem);
 	opacity: 50%;
 	transition: opacity 0.2s;
 
@@ -159,7 +160,7 @@ main>*{
 	margin-bottom: 50px;
 }
 
-@media (min-width: 800px){
+@media (min-width: 801px){
 
 	header{
 		justify-content: space-between;
@@ -172,6 +173,10 @@ main>*{
 	}
 	#image{
 		width: clamp(17.50rem, calc(7.68rem + 19.64vw), 31.25rem);
+	}
+
+	#links>svg{
+		width: clamp(1.80rem, calc(-1.01rem + 5.62vw), 3.91rem);
 	}
 }
 
