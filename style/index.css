@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400;700&family=Kalam:wght@300&family=Licorice&family=Mukta:wght@200&family=Square+Peg&family=Syncopate:wght@400;700&display=swap');
+
+/* setting up the basic boilerplate */
+*{
+	margin:0px;
+}
+:root{
+	--dominant-color: rgb(5, 0, 29);
+	--impact-color: #00caf9;
+}
+
+body{
+	background-color: var(--dominant-color);
+	color:white;
+	padding:clamp(0.00rem, calc(-0.91rem + 4.57vw), 2.34rem);
+	font-family: 'Mukta', sans-serif;
+}
+
+/* setting up the fonts of elements */
+h1{
+	opacity: 70%;
+	font-size: clamp(1.08rem, calc(0.59rem + 2.47vw), 2.34rem);
+}
+#first-name{
+	font-family: 'Syncopate', sans-serif;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+#second-name{
+	font-family: 'Syncopate', sans-serif;
+	letter-spacing: 3px;
+	
+}
+
+/* setting up the size of the logo */
+
+
+/* setting up header elements i.e. logo and contact me to be flex */
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px clamp(1px, 4vw - 5px, 100px);
+	margin-bottom: clamp(1.08rem, calc(-1.09rem + 10.86vw), 9.77rem);
+}
+/* making logo and name to be linear */
+#logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	gap: clamp(0.00rem, calc(-0.91rem + 4.57vw), 2.34rem);
+}
+
+/* making main content to come side by side */
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap:clamp(2.70rem, calc(-8.93rem + 21.25vw), 17.58rem);
+}
+
+/* setting up the rounded image inside a div */
+#image{
+	aspect-ratio: 1/1;
+	width:60vw;	
+	background-image: url("../assets/portrait.jpg");
+	border-radius: 50%;
+	background-size: 100%;
+}
+
+/* setting up the contact me button to be interactive */
+#contact-me{
+	padding: 5px 15px;
+	border-radius: 20px;
+	letter-spacing: 1px;
+	opacity: 70%;
+	transition: background-color 0.1s;
+	transition: opacity 0.1s;
+	display: none;
+}
+#contact-me:hover, #contact-me:focus{
+	cursor: pointer;
+	background-color: var(--impact-color);
+	opacity: 1;
+	transition: background-color 0.2s;
+	transition: opacity 0.2s;
+}
+
+/* modifying the content in the main content */
+#line-1{
+	font-size: clamp(1.50rem, calc(-0.22rem + 3.44vw), 3.91rem);
+	opacity: 50%;
+	line-height: 80%;
+
+}
+
+#line-2{
+	font-size: clamp(1.80rem, calc(-0.40rem + 4.40vw), 4.88rem);
+	font-family: 'Mukta', sans-serif;
+	font-weight: 100;
+}
+
+#name{
+	font-family:'Licorice', 'Caveat', cursive;
+	font-size: 1.5em;
+	/* letter-spacing: 5px; */
+	color: var(--impact-color);
+	padding-left: 8px;
+	line-height: 80%;
+}
+
+#line-3{
+	font-size: clamp(1.50rem, calc(-0.22rem + 3.44vw), 3.91rem);
+
+}
+
+#profession{
+	font-family: 'Kalam', cursive;
+	color:var(--impact-color);
+	padding-left: 8px;
+	border-bottom: 1px solid var(--impact-color);
+	
+
+}
+
+/* modifying the horizontal ruler */
+hr{
+	opacity: 30%;
+	border-top: none;
+	border-left: none;
+	margin: 50px 0px;
+}
+#links{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+#links>svg{
+	aspect-ratio: 1/1;
+	width: 40px;
+	opacity: 50%;
+	transition: opacity 0.2s;
+
+}
+
+#links>svg:hover{
+	cursor: pointer;
+	opacity: 100%;
+	transition: opacity 0.2s;
+}
+
+main>*{
+	margin-inline:clamp(0.00rem, calc(-0.91rem + 4.57vw), 2.34rem);;
+}
+#links{
+	margin-bottom: 50px;
+}
+
+@media (min-width: 800px){
+
+	header{
+		justify-content: space-between;
+	}
+	#logo{
+		justify-content: flex-start;
+	}
+	main{
+		flex-direction: row;
+	}
+	#image{
+		width: clamp(17.50rem, calc(7.68rem + 19.64vw), 31.25rem);
+	}
+}
+
+@media (max-width:800px) {
+		#line-1, #line-3{
+			font-size: clamp(1.80rem, calc(-0.31rem + 8.43vw), 3.91rem);
+
+		}
+		
+		#line-2{
+			font-size: clamp(2.16rem, calc(-0.56rem + 10.89vw), 4.88rem);
+
+		}
+		main{
+			gap:70px;
+		}
+		hr{
+			opacity:1;
+		}
+}
