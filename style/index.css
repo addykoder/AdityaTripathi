@@ -42,7 +42,7 @@ header{
 	align-items: center;
 	justify-content: space-around;
 	padding: 10px clamp(1px, 4vw - 5px, 100px);
-	margin-bottom: clamp(1.08rem, calc(-1.09rem + 10.86vw), 9.77rem);
+	margin-bottom: clamp(1.08rem, calc(-1.09rem + 10.86vw), 6.77rem);
 }
 /* making logo and name to be linear */
 #logo{
@@ -101,6 +101,8 @@ main{
 	font-size: clamp(1.80rem, calc(-0.40rem + 4.40vw), 4.88rem);
 	font-family: 'Mukta', sans-serif;
 	font-weight: 100;
+	/* line-height: 80%; */
+
 }
 
 #name{
@@ -109,21 +111,44 @@ main{
 	/* letter-spacing: 5px; */
 	color: var(--impact-color);
 	padding-left: 8px;
-	line-height: 80%;
 }
 
 #line-3{
 	font-size: clamp(1.50rem, calc(-0.22rem + 3.44vw), 3.91rem);
-
+	line-height: 90%;
 }
+
+
 
 #profession{
 	font-family: 'Kalam', cursive;
 	color:var(--impact-color);
-	padding-left: 8px;
-	border-bottom: 1px solid var(--impact-color);
-	
+	padding-left: 8px;	
+	/* border-bottom: 1px solid var(--impact-color); */
 
+}
+
+#projects-button{
+	border-radius: 5px;
+	color:white;
+	border:none;
+	background-color: var(--impact-color);
+	font-size: clamp(1.08rem, calc(0.59rem + 2.47vw), 2.34rem);
+	font-family: 'Syncopate', sans-serif;
+	letter-spacing: 3px;
+	margin-top: 50px;
+	padding: 10px 20px;
+	width: 100%;
+	transition: all 0.3s;
+}
+#projects-button:hover{
+	outline:none;
+	box-shadow: 0px 0px 50px 5px #0084a1;
+	/* letter-spacing: 4px; */
+	cursor: pointer;
+}
+.bold{
+	font-weight: 700;
 }
 
 /* modifying the horizontal ruler */
