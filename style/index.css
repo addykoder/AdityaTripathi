@@ -6,7 +6,8 @@
 }
 
 :root{
-	--dominant-color: rgb(5, 0, 29);
+	--dominant-color: rgb(0, 3, 15);
+	/* --dominant-color: rgb(24, 2, 11); */
 	--impact-color: #00caf9;
 }
 
