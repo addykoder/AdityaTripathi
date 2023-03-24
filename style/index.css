@@ -66,9 +66,14 @@ main{
 #image{
 	aspect-ratio: 1/1;
 	width:60vw;	
-	background-image: url("../assets/Aditya-Tripathi.jpg");
+	background-image: url("../assets/me.jpg");
 	border-radius: 50%;
-	background-size: 100%;
+	background-size: 105%;
+	background-position: center bottom ;
+	transition: background-size .4s ease-in-out;
+}
+#image:hover{
+	background-size: 115%;
 }
 
 /* setting up the contact me button to be interactive */
@@ -231,7 +236,17 @@ main>*{
 	margin-inline:auto;
 	font-size: 2rem;
 	letter-spacing: 2px;
-	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Syncopate';
 	font-weight: 100;
 	opacity:.7;
+}
+@media (max-width:600px){
+	.contact{
+		font-size: 1rem;
+	}
+}
+@media (max-width:400px){
+	.contact{
+		font-size: .8rem;
+	}
 }
