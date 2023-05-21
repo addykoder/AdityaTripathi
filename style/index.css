@@ -190,7 +190,7 @@ main>*{
 	margin-inline:clamp(0.00rem, calc(-0.91rem + 4.57vw), 2.34rem);;
 }
 #links{
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 }
 
 @media (min-width: 801px){
@@ -237,6 +237,7 @@ main>*{
 .contact{
 	width:max-content;
 	margin-inline:auto;
+	margin-bottom:25px;
 	font-size: 2rem;
 	letter-spacing: 2px;
 	font-family: 'Syncopate';
