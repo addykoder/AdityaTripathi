@@ -164,7 +164,7 @@ hr{
 	opacity: 30%;
 	border-top: none;
 	border-left: none;
-	margin: 50px 0px;
+	margin: 50px 0px 25px 0px;
 }
 #links{
 	display: flex;
@@ -237,7 +237,7 @@ main>*{
 .contact{
 	width:max-content;
 	margin-inline:auto;
-	margin-bottom:25px;
+	margin-bottom:30px;
 	font-size: 2rem;
 	letter-spacing: 2px;
 	font-family: 'Syncopate';
