@@ -1,44 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Licorice&family=Mukta:wght@200&family=Syncopate:wght@400;700&display=swap');
 
 /* setting up the basic boilerplate */
-*{
-	margin:0px;
+* {
+	margin: 0px;
 }
 
-:root{
+:root {
 	--dominant-color: rgb(0, 3, 15);
 	/* --dominant-color: rgb(24, 2, 11); */
 	--impact-color: #00caf9;
 }
 
-body{
+body {
 	background-color: var(--dominant-color);
-	color:white;
-	padding:clamp(0.00rem, calc(-0.91rem + 4.57vw), 2.34rem);
+	color: white;
+	padding: clamp(0rem, calc(-0.91rem + 4.57vw), 2.34rem);
 	font-family: 'Mukta', sans-serif;
 }
 
 /* setting up the fonts of elements */
-h1{
+h1 {
 	opacity: 70%;
 	font-size: clamp(1.08rem, calc(0.59rem + 2.47vw), 2.34rem);
 }
-#first-name{
+#first-name {
 	font-family: 'Syncopate', sans-serif;
 	letter-spacing: 3px;
 	font-weight: 100;
 }
-#second-name{
+#second-name {
 	font-family: 'Syncopate', sans-serif;
 	letter-spacing: 3px;
-	
 }
 
 /* setting up the size of the logo */
 
-
 /* setting up header elements i.e. logo and contact me to be flex */
-header{
+header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -46,7 +44,7 @@ header{
 	margin-bottom: clamp(1.08rem, calc(-1.09rem + 10.86vw), 6.77rem);
 }
 /* making logo and name to be linear */
-#logo{
+#logo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -55,32 +53,33 @@ header{
 }
 
 /* making main content to come side by side */
-main{
+main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap:clamp(2.70rem, calc(-8.93rem + 21.25vw), 17.58rem);
+	gap: clamp(2.7rem, calc(-8.93rem + 21.25vw), 17.58rem);
 }
 
 /* setting up the rounded image inside a div */
-#image{
+#image {
 	aspect-ratio: 1/1;
-	width:60vw;	
-	background-image: url("../assets/me2v3.jpg");
+	width: 60vw;
+	background-image: url('../assets/me2.png');
 	border-radius: 50%;
 	/* border: 2px solid var(--impact-color);
 	box-shadow: 5px 5px 50px 5px var(--impact-color); */
+	background-position: center top;
 	background-size: 105%;
-	background-position: center bottom ;
-	transition: background-size .4s ease-in-out;
+	background-position: center bottom;
+	transition: background-size 0.4s ease-in-out;
 }
-#image:hover{
+#image:hover {
 	background-size: 115%;
 }
 
 /* setting up the contact me button to be interactive */
-#contact-me{
+#contact-me {
 	padding: 5px 15px;
 	border-radius: 20px;
 	letter-spacing: 1px;
@@ -89,7 +88,8 @@ main{
 	transition: opacity 0.1s;
 	display: none;
 }
-#contact-me:hover, #contact-me:focus{
+#contact-me:hover,
+#contact-me:focus {
 	cursor: pointer;
 	background-color: var(--impact-color);
 	opacity: 1;
@@ -98,48 +98,43 @@ main{
 }
 
 /* modifying the content in the main content */
-#line-1{
-	font-size: clamp(1.50rem, calc(-0.22rem + 3.44vw), 3.91rem);
+#line-1 {
+	font-size: clamp(1.5rem, calc(-0.22rem + 3.44vw), 3.91rem);
 	opacity: 50%;
 	line-height: 80%;
-
 }
 
-#line-2{
-	font-size: clamp(1.80rem, calc(-0.40rem + 4.40vw), 4.88rem);
+#line-2 {
+	font-size: clamp(1.8rem, calc(-0.4rem + 4.4vw), 4.88rem);
 	font-family: 'Mukta', sans-serif;
 	font-weight: 100;
 	/* line-height: 80%; */
-
 }
 
-#name{
-	font-family:'Licorice', 'Caveat', cursive;
+#name {
+	font-family: 'Licorice', 'Caveat', cursive;
 	font-size: 1.5em;
 	/* letter-spacing: 5px; */
 	color: var(--impact-color);
 	padding-left: 8px;
 }
 
-#line-3{
-	font-size: clamp(1.50rem, calc(-0.22rem + 3.44vw), 3.91rem);
+#line-3 {
+	font-size: clamp(1.5rem, calc(-0.22rem + 3.44vw), 3.91rem);
 	line-height: 90%;
 }
 
-
-
-#profession{
+#profession {
 	font-family: 'Kalam', cursive;
-	color:var(--impact-color);
-	padding-left: 8px;	
+	color: var(--impact-color);
+	padding-left: 8px;
 	/* border-bottom: 1px solid var(--impact-color); */
-
 }
 
-#projects-button{
+#projects-button {
 	border-radius: 5px;
-	color:white;
-	border:none;
+	color: white;
+	border: none;
 	background-color: var(--impact-color);
 	font-size: clamp(1.08rem, calc(0.59rem + 2.47vw), 2.34rem);
 	font-family: 'Syncopate', sans-serif;
@@ -149,108 +144,102 @@ main{
 	width: 100%;
 	transition: all 0.3s;
 }
-#projects-button:hover{
-	outline:none;
+#projects-button:hover {
+	outline: none;
 	box-shadow: 0px 0px 50px 5px #0084a1;
 	/* letter-spacing: 4px; */
 	cursor: pointer;
 }
-.bold{
+.bold {
 	font-weight: 700;
 }
 
 /* modifying the horizontal ruler */
-hr{
+hr {
 	opacity: 30%;
 	border-top: none;
 	border-left: none;
 	margin: 50px 0px 25px 0px;
 }
-#links{
+#links {
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
 	align-items: center;
 }
-#links>svg{
+#links > svg {
 	aspect-ratio: 1/1;
-	width: clamp(1.80rem, calc(1.12rem + 3.62vw), 2.93rem);
+	width: clamp(1.8rem, calc(1.12rem + 3.62vw), 2.93rem);
 	opacity: 50%;
 	transition: opacity 0.2s;
-
 }
 
-#links>svg:hover{
+#links > svg:hover {
 	cursor: pointer;
 	opacity: 100%;
 	transition: opacity 0.2s;
 }
 
-main>*{
-	margin-inline:clamp(0.00rem, calc(-0.91rem + 4.57vw), 2.34rem);;
+main > * {
+	margin-inline: clamp(0rem, calc(-0.91rem + 4.57vw), 2.34rem);
 }
-#links{
+#links {
 	margin-bottom: 25px;
 }
 
-@media (min-width: 801px){
-
-	header{
+@media (min-width: 801px) {
+	header {
 		justify-content: space-between;
 	}
-	#logo{
+	#logo {
 		justify-content: flex-start;
 	}
-	main{
+	main {
 		flex-direction: row;
 	}
-	#image{
-		width: clamp(17.50rem, calc(7.68rem + 19.64vw), 31.25rem);
+	#image {
+		width: clamp(17.5rem, calc(7.68rem + 19.64vw), 31.25rem);
 	}
 
-	#links>svg{
-		width: clamp(1.80rem, calc(-1.01rem + 5.62vw), 3.91rem);
+	#links > svg {
+		width: clamp(1.8rem, calc(-1.01rem + 5.62vw), 3.91rem);
 	}
 }
 
-@media (max-width:800px) {
-		#line-1, #line-3{
-			font-size: clamp(1.80rem, calc(-0.31rem + 8.43vw), 3.91rem);
+@media (max-width: 800px) {
+	#line-1,
+	#line-3 {
+		font-size: clamp(1.8rem, calc(-0.31rem + 8.43vw), 3.91rem);
+	}
 
-		}
-		
-		#line-2{
-			font-size: clamp(2.16rem, calc(-0.56rem + 10.89vw), 4.88rem);
-
-		}
-		main{
-			gap:70px;
-		}
-		hr{
-			opacity:1;
-		}
+	#line-2 {
+		font-size: clamp(2.16rem, calc(-0.56rem + 10.89vw), 4.88rem);
+	}
+	main {
+		gap: 70px;
+	}
+	hr {
+		opacity: 1;
+	}
 }
 
-
-
-
-.contact{
-	width:max-content;
-	margin-inline:auto;
-	margin-bottom:30px;
+.contact {
+	width: max-content;
+	margin-inline: auto;
+	margin-bottom: 30px;
 	font-size: 2rem;
 	letter-spacing: 2px;
 	font-family: 'Syncopate';
 	font-weight: 100;
-	opacity:.7;
+	opacity: 0.7;
 }
-@media (max-width:600px){
-	.contact{
+@media (max-width: 600px) {
+	.contact {
 		font-size: 1rem;
 	}
 }
-@media (max-width:400px){
-	.contact{
-		font-size: .8rem;
+@media (max-width: 400px) {
+	.contact {
+		font-size: 0.8rem;
 	}
 }
