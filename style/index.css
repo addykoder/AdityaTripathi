@@ -65,12 +65,12 @@ main {
 #image {
 	aspect-ratio: 1/1;
 	width: 70vw;
-	background-image: url('../assets/me2.png');
+	background-image: url('../assets/me.jpg');
 	border-radius: 50%;
 	/* border: 2px solid var(--impact-color);
 	box-shadow: 5px 5px 50px 5px var(--impact-color); */
 	background-size: 105%;
-	background-position: center center;
+	background-position: center bottom;
 	transition: background-size 0.4s ease-in-out;
 }
 #image:hover {
